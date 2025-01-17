@@ -29,12 +29,24 @@ h2{
   background-image: url("./assets/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #presentation{
   width: 37.5rem;
-  position: relative;
-  top:calc(50% - 9.1rem);
+}
+
+#qualities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+#qualities > img {
+  margin: 0 2.5rem;
 }
 
 button{
@@ -49,7 +61,7 @@ button{
 }
 
 .container {
-  padding: 10rem 7.5rem;
+  padding: 5rem 7.5rem;
   text-align: center;
 }
 
@@ -69,4 +81,73 @@ button{
 
 .background-gradient {
   background: linear-gradient(190deg, #FFF, #464481);
+}
+
+.background-red {
+  background-color: #F84646;
+  color: #FFF;
+}
+
+#blog > article {
+  display: flex;
+  margin-top: 12rem;
+  text-align: left;
+}
+
+#blog > article:first-child {
+  margin-top: 0;
+}
+
+#blog > article > div {
+  margin-right: 4.8rem;
+}
+
+#blog > article > img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+#blog > article > .article-detail > p {
+  margin-top: 4rem;
+}
+
+#blog > article > .article-detail > button {
+  margin-top: 4.8rem;
+}
+
+#blog > article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#blog > article:nth-child(even) > div {
+  margin-left: 4.8rem;
+  margin-right: 0;
+}
+
+.footer-list {
+  display: flex;
+  text-align: left;
+
+}
+
+.footer-list > ul > li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-list > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-list > ul > li:first-child {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8.5rem;
 }
